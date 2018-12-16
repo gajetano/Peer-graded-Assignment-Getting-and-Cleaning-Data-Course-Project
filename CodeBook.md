@@ -30,8 +30,8 @@ Names of 561 table variables are stored in features.txt
 The outcome of this step is to create the main data table by merging both test and train tables
 
 ### Step 4: Extract only measurements on the mean and standard deviation
-First the grepl function is used to search values and return logical vector (TRUE/FALSE) of matched elements.
-Then the subset has been created to get the required dataset.
+First the grepl function is used to search column names and return logical vector (TRUE/FALSE) of matched elements.
+Then the subset of table columns has been created to get the required dataset.
 
 ### Step 5: Create tidy data set
 The tidy data set contains the average of all variables for each activity and subject. This step involves:
