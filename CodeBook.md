@@ -13,5 +13,12 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain
 
+## About the R code
 
+### Step 1: Reading the test and training set data
+The objective here is to read the test and training data tables into R. 4 basic level data sets will be defined and created:
+* test data set
+* train data set
+* features data set
+* activity labels data set
 
