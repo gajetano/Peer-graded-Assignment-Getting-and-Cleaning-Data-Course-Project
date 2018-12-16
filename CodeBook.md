@@ -22,3 +22,9 @@ The objective here is to read the test and training data tables into R. 4 basic 
 * features data set
 * activity labels data set
 
+### Step 2: Create column names for the test and training tables
+The objective here is to assign column names to the test and training tables.
+Names of 561 table variables are stored in features.txt
+
+
+
