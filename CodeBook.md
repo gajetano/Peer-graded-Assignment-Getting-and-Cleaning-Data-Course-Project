@@ -16,14 +16,14 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ## About the R code
 
 ### Step 1: Read the test and training set data
-The objective here is to read the test and training data tables into R. 4 basic level data sets will be defined and created:
+The objective here is to read the test and training data tables into R. Four basic level data sets will be defined and created:
 * test data set
 * train data set
 * features data set
 * activity labels data set
 
 ### Step 2: Create column names for the test and training tables
-The objective here is to assign column names to the test and training tables. At this stage the data sets have been created with the riht coloumn names.
+The objective here is to assign column names to the test and training tables. At this stage the data sets have been created with the right coloumn names.
 Names of 561 table variables are stored in features.txt
 
 ### Step 3: Merge test and train tables
