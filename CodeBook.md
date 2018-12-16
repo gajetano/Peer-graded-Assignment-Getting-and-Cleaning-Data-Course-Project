@@ -15,7 +15,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ## About the R code
 
-### Step 1: Reading the test and training set data
+### Step 1: Read the test and training set data
 The objective here is to read the test and training data tables into R. 4 basic level data sets will be defined and created:
 * test data set
 * train data set
@@ -23,8 +23,21 @@ The objective here is to read the test and training data tables into R. 4 basic 
 * activity labels data set
 
 ### Step 2: Create column names for the test and training tables
-The objective here is to assign column names to the test and training tables.
+The objective here is to assign column names to the test and training tables. At this stage the data sets have been created with the riht coloumn names.
 Names of 561 table variables are stored in features.txt
 
+### Step 3: Merge test and train tables
+The outcome of this step is to create the main data table by merging both test and train tables
 
+### Step 4: Extract only measurements on the mean and standard deviation
+First the grepl function is used to search values and return logical vector (TRUE/FALSE) of matched elements.
+Then the subset has been created to get the required dataset.
 
+### Step 5: Create tidy data set
+The tidy data set contains the average of all variables for each activity and subject. This step involves:
+* Aggregation of data by using aggregate function
+* Sorting of data by subjectID, activityID
+* Cleaning of variable names to remove "()" and "-", and to capitalize the first letters of "mean" and "std"
+
+### Step 6: Save tidy data set
+Write the ouput to a text file: tidyDataset.txt
